@@ -180,9 +180,4 @@ dataset = TUDataset(root='./data/ENZYMES', name='ENZYMES')
 dataset = dataset.shuffle()
 task = 'graph'
 
-model = train(dataset, task)
-
-dataset = Planetoid(root='./data/cora', name='cora')
-task = 'node'
-
 model = train(dataset, task, 200)
